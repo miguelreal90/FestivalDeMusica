@@ -2,9 +2,11 @@
   "name": "festivaldemusica",
   "version": "1.0.0",
   "description": "aprendiendo SASS y npm",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
   },
   "keywords": [
     "SASS",
@@ -14,6 +16,8 @@
   "author": "Miguel Villamizar",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.77.1"
   }
 }
